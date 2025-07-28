@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jump Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+      color: #2d3436;
+      line-height: 1.6;
+    }
+
+    .head {
+      background-color: #22a6b3;
+      color: white;
+      padding: 2vh 2vw;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .head h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      padding: 2vw;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    video, img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 2vh 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0984e3;
+      margin-top: 2em;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 1em 0;
+    }
+
+    ul {
+      padding-left: 1.5em;
+    }
+
+    ul li {
+      margin-bottom: 0.8em;
+    }
+
+    @media (max-width: 600px) {
+      .head h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p, ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <h1>Jumping Game</h1>
+  </div>
+
+  <main>
+    <video autoplay muted loop id="vid">
+      <source src="img/hongosgameplay.mp4" type="">
+    </video>
+
+    <img src="img/titlescreen.png" alt="Game Title Screen">
+    <img src="img/gameover.png" alt="Game Over Screen">
+
+    <p>
+      An obstacle-jumping game where you control the character with your body.
+      Using a webcam and some pose detection, the game reacts when you physically jump.
+      It’s a fun project that combines creative coding, computer vision, and game design.
+    </p>
+
+    <h2>How It Works</h2>
+
+    <p>
+      The way this works is by taking the webcam input and sending each frame to a pose detection algorithm.
+      Once the algorithm detects where a person is, it’s easy to determine if that person is jumping or not.
+      If we have a jump, we can notify the game so that it handles its logic (drawing the images, collision detection, sound, score, etc.).
+    </p>
+
+    <img src="img/diagram1.png" alt="Diagram showing how the jump detection system works">
+
+    <h2>Commercial Applications</h2>
+    <p>
+      The technology behind it has real potential for commercial use, especially in marketing, events, education, and retail experiences.
+      Imagine walking into a mall, a trade show, or a store and being invited to jump to win a prize or control a game with your body—no controllers, no downloads, just you and a screen. Here's how a game like this could be used commercially:
+    </p>
+
+    <ul>
+      <li>A branded version of the game with product, mascot, or campaign themes.</li>
+      <li>Example: For a sports drink, players jump over fire pits and collect bottles for points.</li>
+      <li>Shoppers can play for discounts or samples.</li>
+      <li>Fun, attention-grabbing, and shareable on social media.</li>
+      <li>Kids learn about nutrition, recycling, or safety through play.</li>
+      <li>Ideal for schools, museums, and family events.</li>
+      <li>Interactive booths to attract foot traffic at expos.</li>
+      <li>Participants can win branded merchandise or enter raffles.</li>
+      <li>Touchless interaction is ideal post-pandemic.</li>
+      <li>It's inclusive and intuitive—if you can jump, you can play.</li>
+      <li>Memorable experiences improve brand recall.</li>
+    </ul>
+
+    <p>
+      The cool thing about this game is that it can be customized with different graphics, sounds, and gameplay elements to fit any brand or campaign theme.
+    </p>
+  </main>
+</body>
+</html>
